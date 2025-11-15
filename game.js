@@ -3,7 +3,7 @@ const ctx = canvas.getContext('2d');
 
 // Game constants
 const pipeWidth = 52;
-const pipeGap = 120;
+const pipeGap = 150;
 const pipeInterval = 120;
 
 // Game state variables
@@ -18,8 +18,8 @@ let bird = {
     y: 150,
     width: 40,
     height: 30,
-    gravity: 0.6,
-    lift: -15,
+    gravity: 0.4,
+    lift: -10,
     velocity: 0
 };
 const birdSprite = new Image();
@@ -75,8 +75,8 @@ function draw() {
 
     // Draw score
     ctx.fillStyle = '#000';
-    ctx.font = '20px Verdana';
-    ctx.fillText('Score: ' + score, 10, canvas.height - 20);
+    ctx.font = '30px Verdana';
+    ctx.fillText('Score: ' + score, 10, canvas.height - 30);
 
     // Ground collision
     if (bird.y + bird.height > canvas.height) {
