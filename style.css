@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#gameCanvas {
+    border: 1px solid black;
+    background: linear-gradient(to bottom, #70c5ce 0%, #a6e2e9 100%);
+}
+
+#gameOverScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
