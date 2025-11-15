@@ -5,7 +5,12 @@ body {
 
 #gameCanvas {
     border: 1px solid black;
-    background: linear-gradient(to bottom, #70c5ce 0%, #a6e2e9 100%);
+    background: #70c5ce;
+    background-image:
+        radial-gradient(circle at 10% 20%, #fff 5%, transparent 5.5%),
+        radial-gradient(circle at 80% 30%, #fff 4%, transparent 4.5%),
+        radial-gradient(circle at 40% 70%, #fff 6%, transparent 6.5%),
+        radial-gradient(circle at 90% 80%, #fff 3%, transparent 3.5%);
 }
 
 #gameOverScreen {
